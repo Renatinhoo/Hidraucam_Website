@@ -1,542 +1,904 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hidraucam - Plataformas Hidráulicas</title>
 
-    <!-- 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hidraucam - Plataformas Hidráulicas</title>
+
+  <!-- 
         - favicon (icone da guia do site)
     -->
-    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
 
-    <!--
+  <!--
         - link do css
     -->
-    <link rel="stylesheet" href="./assets/css/style.css">
 
-    <!--
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!--
+        - link do css thiago
+    -->
+  <link rel="stylesheet" href="./assets/css/contact.css">
+  <!--
         - Google font link
     -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Rubik:wght@400;500;600;700&display=swap"
-      rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Rubik:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
 
-      <!--
+  <!--
         carregar images
       -->
 </head>
 
 <body>
 
-    <!--
+  <!--
         - HEADER
     -->
 
-    <header class="header" data-header>
-        <div class="container">
-    
-          <h1>
-            <a href="" class="logo">Hidraucam</a>
-          </h1>
-    
-          <nav class="navbar" data-navbar>
-    
-            <div class="navbar-top">
-              <a href="#" class="logo">Hidraucam</a>
-    
-              <button class="nav-close-btn" aria-label="Clsoe menu" data-nav-toggler>
-                <ion-icon name="close-outline"></ion-icon>
-              </button>
-            </div>
-    
-            <ul class="navbar-list">
-    
-              <li class="navbar-item">
-                <a href="#home" class="navbar-link" data-nav-link>
-                  <span>Início</span>
-    
-                  <ion-icon name="chevron-forward"></ion-icon>
-                </a>
-              </li>
-    
-              <li class="navbar-item">
-                <a href="#about" class="navbar-link" data-nav-link>
-                  <span>Sobre nós</span>
-    
-                  <ion-icon name="chevron-forward"></ion-icon>
-                </a>
-              </li>
-    
-              <li class="navbar-item">
-                <a href="#service" class="navbar-link" data-nav-link>
-                  <span>Serviços</span>
-    
-                  <ion-icon name="chevron-forward"></ion-icon>
-                </a>
-              </li>
+  <header class="header" data-header>
+    <div class="container">
 
-              <li class="navbar-item">
-                <a href="#product" class="navbar-link" data-nav-link>
-                  <span>Produtos</span>
-    
-                  <ion-icon name="chevron-forward"></ion-icon>
-                </a>
-              </li>
+      <h1>
+        <a href="" class="logo">Hidraucam</a>
+      </h1>
 
-              <li class="navbar-item">
-                <a href="#" class="navbar-link" data-nav-link>
-                  <span>Fale conosco</span>
-    
-                  <ion-icon name="chevron-forward"></ion-icon>
-                </a>
-              </li>
-    
-            </ul>
-    
-          </nav>
-    
-          <div class="header-contact">
-    
-            <div>
-              <p class="contact-label">Entre em contato!</p>
-    
-              <a href="tel:+55 11 94029-4817" class="contact-number">+55 11 94029-4817</a>
-            </div>
-    
-            <div class="contact-icon">
-              <ion-icon name="call-outline"></ion-icon>
-            </div>
-    
-          </div>
-    
-          <button class="nav-open-btn" aria-label="Open menu" data-nav-toggler>
-            <ion-icon name="menu-outline"></ion-icon>
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">Hidraucam</a>
+
+          <button class="nav-close-btn" aria-label="Clsoe menu" data-nav-toggler>
+            <ion-icon name="close-outline"></ion-icon>
           </button>
-    
-          <div class="overlay" data-nav-toggler data-overlay></div>
-    
         </div>
-      </header>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-link>
+              <span>Início</span>
+
+              <ion-icon name="chevron-forward"></ion-icon>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link" data-nav-link>
+              <span>Sobre nós</span>
+
+              <ion-icon name="chevron-forward"></ion-icon>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#service" class="navbar-link" data-nav-link>
+              <span>Serviços</span>
+
+              <ion-icon name="chevron-forward"></ion-icon>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#product" class="navbar-link" data-nav-link>
+              <span>Produtos</span>
+
+              <ion-icon name="chevron-forward"></ion-icon>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#blog" class="navbar-link" data-nav-link>
+              <span>Galeria</span>
+
+              <ion-icon name="chevron-forward"></ion-icon>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#contact" class="navbar-link" data-nav-link>
+              <span>Fale conosco</span>
+
+              <ion-icon name="chevron-forward"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="header-contact">
+
+        <div>
+          <p class="contact-label">Entre em contato!</p>
+
+          <a href="tel:+55 11 94029-4817" class="contact-number">+55 11 94029-4817</a>
+        </div>
+
+        <div class="contact-icon">
+          <ion-icon name="call-outline"></ion-icon>
+        </div>
+
+      </div>
+
+      <button class="nav-open-btn" aria-label="Open menu" data-nav-toggler>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
 
 
 
 
 
 
-      <main>
-        <article>
+  <main>
+    <article>
 
-            <!--
+      <!--
                 - #INDEX
             -->
 
-            <section class="section hero" aria-label="home" id="home"
-            style="background-image: url('./assets/images/hero-banner5.png')">
-            <div class="container">
-    
-              <div class="hero-content">
-    
-                <h2 class="h1 hero-title">
-                  <span class="span">Plataformas</span> Hidraulicas
-                </h2>
-    
-                <p class="hero-text">
-                    Alta eficiência na movimentação de cargas!
-                </p>
-    
-                <a href="#" class="btn-outline">Ver Produtos</a>
-    
-                <img src="./assets/images/hero-shape.png" width="116" height="116" loading="lazy"
-                  class="hero-shape shape-1">
-    
-                <img src="./assets/images/hero-shape.png" width="116" height="116" loading="lazy"
-                  class="hero-shape shape-2">
-    
-              </div>
-    
-            </div>
-          </section>
+      <section class="section hero" aria-label="home" id="home"
+        style="background-image: url('./assets/images/hero-banner-f.png')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h2 class="h1 hero-title">
+              <span class="span">Plataformas</span> Hidraulicas
+            </h2>
+
+            <p class="hero-text">
+              Alta eficiência na movimentação de cargas!
+            </p>
+
+            <a href="produtos.html" class="btn-outline">Ver Produtos</a>
+
+            <img src="./assets/images/hero-shape.png" width="116" height="116" loading="lazy"
+              class="hero-shape shape-1">
+
+            <img src="./assets/images/hero-shape.png" width="116" height="116" loading="lazy"
+              class="hero-shape shape-2">
+
+          </div>
+
+        </div>
+      </section>
 
 
-          <!--
+      <!--
                 - #SOBRE NOS ABOUT US ABOUT
             -->
-            
-            <section class="section about" id="about" aria-label="about">
-                <div class="container">
 
-                    <figure class="about-banner img-holder" style="--width: 400; height: 720;">
-                        <img src="./assets/images/about-banner.jpg"  width="400" height="720" loading="lazy"
-                        alt="" 
-                            class="img-cover">
+      <section class="section about" id="about" aria-label="about">
+        <div class="container">
 
-                        <img src="./assets/images/about-shape-1.png" width="260" height="170" loading="lazy" 
-                        alt="" 
-                            class="abs-img abs-img-1">
+          <figure class="about-banner img-holder" style="--width: 400; height: 720;">
+            <img src="./assets/images/about-banner.jpg" width="400" height="720" loading="lazy" alt=""
+              class="img-cover">
 
-                        <img src="./assets/images/about-shape-2.png" width="500" height="500" loading="lazy" 
-                        alt="" 
-                            class="abs-img abs-img-2">
-                    </figure>
+            <img src="./assets/images/about-shape-1.png" width="260" height="170" loading="lazy" alt=""
+              class="abs-img abs-img-1">
 
-                    <div class="about-content">
+            <img src="./assets/images/about-shape-2.png" width="500" height="500" loading="lazy" alt=""
+              class="abs-img abs-img-2">
+          </figure>
 
-                        <p class="section-subtitle">Porque nos escolher</p>
+          <div class="about-content">
 
-                        <h2 class="h2 section-title">Empresa especializada em plataforma hidráulica</h2>
+            <p class="section-subtitle">Porque nos escolher</p>
 
-                        <p class="section-text">
-                            Trabalhando desde 2001 com plataformas elevatórias de carga
-                        </p>
+            <h2 class="h2 section-title">Empresa especializada em plataforma hidráulica</h2>
 
-                        <ul class="about-list">
+            <p class="section-text">
+              Trabalhando desde 2001 com plataformas elevatórias de carga
+            </p>
 
-                            <li class="about-item">
-                                <div class="about-icon">
-                                    <ion-icon name="chevron-forward"></ion-icon>
-                                </div>
+            <ul class="about-list">
 
-                                <p class="about text">
-                                    Temos como objetivo entregar os melhores produtos e serviços do mercado.
-                                </p>
-                            </li>
-
-                            <li class="about-item">
-                                <div class="about-icon">
-                                    <ion-icon name="chevron-forward"></ion-icon>
-                                </div>
-
-                                <p class="about text">
-                                    Produtos que agregam valor à frota e facilitam a movimentação de carga.
-                                </p>
-                            </li>
-
-                            <li class="about-item">
-                                <div class="about-icon">
-                                    <ion-icon name="chevron-forward"></ion-icon>
-                                </div>
-
-                                <p class="about text">
-                                    Pensamos sempre no resultado final com foco no cliente.
-                                </p>
-                            </li>
-
-                            <li class="about-item">
-                                <div class="about-icon">
-                                    <ion-icon name="chevron-forward"></ion-icon>
-                                </div>
-
-                                <p class="about text">
-                                    Possuimos diversas plataformas para atenderem sua necessidade.
-                                </p>
-                            </li>
-
-                            <li class="about-item">
-                                <div class="about-icon">
-                                    <ion-icon name="chevron-forward"></ion-icon>
-                                </div>
-
-                                <p class="about text">
-                                    Nossos equipamentos são reconhecidos nacionalmente pela excelente qualidade.
-                                </p>
-                            </li>
-
-                            <li class="about-item">
-                                <div class="about-icon">
-                                    <ion-icon name="chevron-forward"></ion-icon>
-                                </div>
-
-                                <p class="about text">
-                                    Solicite um orçamento sem compromisso, teremos o maior prazer em atender suas necessidades.
-                                </p>
-                            </li>
-
-                        </ul>
-
-                        <a href="#" class="btn">Saiba mais!</a>
-
-                    </div>
- 
+              <li class="about-item">
+                <div class="about-icon">
+                  <ion-icon name="chevron-forward"></ion-icon>
                 </div>
-            </section>
+
+                <p class="about text">
+                  Temos como objetivo entregar os melhores produtos e serviços do mercado.
+                </p>
+              </li>
+
+              <li class="about-item">
+                <div class="about-icon">
+                  <ion-icon name="chevron-forward"></ion-icon>
+                </div>
+
+                <p class="about text">
+                  Produtos que agregam valor à frota e facilitam a movimentação de carga.
+                </p>
+              </li>
+
+              <li class="about-item">
+                <div class="about-icon">
+                  <ion-icon name="chevron-forward"></ion-icon>
+                </div>
+
+                <p class="about text">
+                  Pensamos sempre no resultado final com foco no cliente.
+                </p>
+              </li>
+
+              <li class="about-item">
+                <div class="about-icon">
+                  <ion-icon name="chevron-forward"></ion-icon>
+                </div>
+
+                <p class="about text">
+                  Possuimos diversas plataformas para atenderem sua necessidade.
+                </p>
+              </li>
+
+              <li class="about-item">
+                <div class="about-icon">
+                  <ion-icon name="chevron-forward"></ion-icon>
+                </div>
+
+                <p class="about text">
+                  Nossos equipamentos são reconhecidos nacionalmente pela excelente qualidade.
+                </p>
+              </li>
+
+              <li class="about-item">
+                <div class="about-icon">
+                  <ion-icon name="chevron-forward"></ion-icon>
+                </div>
+
+                <p class="about text">
+                  Solicite um orçamento sem compromisso, teremos o maior prazer em atender suas necessidades.
+                </p>
+              </li>
+
+            </ul>
+
+            <a href="aboutus.html" class="btn">Saiba mais!</a>
+
+          </div>
+
+        </div>
+      </section>
 
 
 
-             <!--
+      <!--
+                - #Produtos
+            -->
+
+      <section class="section project" id="service" aria-label="project">
+        <div class="container">
+
+          <p class="section-subtitle">Produtos</p>
+
+          <h2 class="h2 section-title">Produtos Hidraucam</h2>
+
+          <p class="section-text">
+            Plataformas hidráulica elevatória hidraucam, para caminhões baú
+            e veículos de carga, a melhor solução para o seu negócio!
+          </p>
+
+          <ul class="project-list">
+
+            <li class="project-item">
+              <div class="project-card">
+
+
+                <figure class="card-banner img-holder" style="--width: 397; --height: 352;">
+                  <img src="./assets/images/project-9.jpg" width="397" height="352" loading="lazy"
+                    alt="Inventario Produtos" class="img-cover">
+                </figure>
+
+                <button class="action-btn" aria-label="View image">
+                  <ion-icon name="expand-outline"></ion-icon>
+                </button>
+
+                <div class="card-content">
+                  <p class="card-tag">Capacidade máxima de 300kg</p>
+
+                  <h3 class="h3">
+                    <a href="produtos.html" class="card-title">Plataforma - HDR300</a>
+                  </h3>
+
+                  <a href="produtos.html" class="card-link">Ver mais</a>
+                </div>
+
+              </div>
+            </li>
+
+
+            <li class="project-item">
+              <div class="project-card">
+
+
+                <figure class="card-banner img-holder" style="--width: 397; --height: 352;">
+                  <img src="./assets/images/project-8.jpg" width="397" height="352" loading="lazy"
+                    alt="Inventario Produtos" class="img-cover">
+                </figure>
+
+                <button class="action-btn" aria-label="View image">
+                  <ion-icon name="expand-outline"></ion-icon>
+                </button>
+
+                <div class="card-content">
+                  <p class="card-tag">Capacidade máxima de 500kg</p>
+
+                  <h3 class="h3">
+                    <a href="produtos.html" class="card-title">Plataforma - HDR500</a>
+                  </h3>
+
+                  <a href="produtos.html" class="card-link">Ver mais</a>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="project-item">
+              <div class="project-card">
+
+
+                <figure class="card-banner img-holder" style="--width: 397; --height: 352;">
+                  <img src="./assets/images/project-5.jpg" width="397" height="352" loading="lazy"
+                    alt="Inventario Produtos" class="img-cover">
+                </figure>
+
+                <button class="action-btn" aria-label="View image">
+                  <ion-icon name="expand-outline"></ion-icon>
+                </button>
+
+                <div class="card-content">
+                  <p class="card-tag">Capacidade máxima de 700kg</p>
+
+                  <h3 class="h3">
+                    <a href="produtos.html" class="card-title">Plataforma - HDR700</a>
+                  </h3>
+
+                  <a href="produtos.html" class="card-link">Ver mais</a>
+                </div>
+
+              </div>
+            </li>
+
+
+            <li class="project-item">
+              <div class="project-card">
+
+
+                <figure class="card-banner img-holder" style="--width: 397; --height: 352;">
+                  <img src="./assets/images/project-2.jpg" width="397" height="352" loading="lazy"
+                    alt="Inventario Produtos" class="img-cover">
+                </figure>
+
+                <button class="action-btn" aria-label="View image">
+                  <ion-icon name="expand-outline"></ion-icon>
+                </button>
+
+                <div class="card-content">
+                  <p class="card-tag">Capacidade máxima de 1000kg</p>
+
+                  <h3 class="h3">
+                    <a href="produtos.html" class="card-title">Plataforma - HDR1000</a>
+                  </h3>
+
+                  <a href="produtos.html" class="card-link">Ver mais</a>
+                </div>
+
+              </div>
+            </li>
+
+
+            <li class="project-item">
+              <div class="project-card">
+
+
+                <figure class="card-banner img-holder" style="--width: 397; --height: 352;">
+                  <img src="./assets/images/project-6.jpg" width="397" height="352" loading="lazy"
+                    alt="Inventario Produtos" class="img-cover">
+                </figure>
+
+                <button class="action-btn" aria-label="View image">
+                  <ion-icon name="expand-outline"></ion-icon>
+                </button>
+
+                <div class="card-content">
+                  <p class="card-tag">Capacidade máxima de 2000kg</p>
+
+                  <h3 class="h3">
+                    <a href="produtos.html" class="card-title">Plataforma - HDR2000</a>
+                  </h3>
+
+                  <a href="produtos.html" class="card-link">Ver mais</a>
+                </div>
+
+              </div>
+            </li>
+
+
+
+
+          </ul>
+
+
+        </div>
+      </section>
+
+
+
+
+
+
+      <!--
                 - #SERVIÇOS
             -->
-            <section class="section feature" arial-label="feature">
-                <div class="container">
+      <section class="section feature" id="product" arial-label="feature">
+        <div class="container">
 
-                    <div class="title-wrapper">
-                        <div>
-                            <p class="section-subtitle">Serviços</p>
+          <div class="title-wrapper">
+            <div>
+              <p class="section-subtitle">Serviços</p>
 
-                            <h2 class="h2 section-title">Serviços prestados pela Hidraucam</h2>
+              <h2 class="h2 section-title">Serviços prestados pela Hidraucam</h2>
 
-                            <p class="section-text">
-                                Para garantir a qualidade, a segurança e a continuidade 
-                                dos seus serviços a HIDRAUCAM tem um Plano de Manutenção 
-                                Preventiva adequado às suas necessidades.
-                            </p>
-                        </div>
-
-
-                        <a href="#" class="btn">Ver mais</a>
-
-
-                    </div>
-                    
-                    <ul class="feature-list grid-list">
-
-                        <li>
-                            <div class="feature-card" style="--card-number: '01'">
-
-                            <div class="card-icon">
-                                <img src="./assets/images/feature-icon-2.png" width="94" height="94" alt="">
-                            </div>
-                                <h3 class="h3 card-title">Manutenção Operacional</h3>
-
-                                <p class="card-text">
-                                    A HIDRAUCAM realiza todos os serviços 
-                                    de manutenção de 
-                                    equipamento hidráulico de qualquer marca, 
-                                    modelo e tamanho
-                                </p>
-
-                                <a href="#" class="card-btn" aria-label="Ver mais">
-                                    <ion-icon name="arrow-forward"></ion-icon>
-                                </a>
-
-                            
-
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="feature-card" style="--card-number: '02'">
-
-                            <div class="card-icon">
-                                <img src="./assets/images/feature-icon-1.png" width="71" height="91" alt="">
-                            </div>
-                                <h3 class="h3 card-title">Manutenção preventiva</h3>
-
-                                <p class="card-text">
-                                    A HIDRAUCAM recomenda e executa excelentes serviços 
-                                    de Manutenção Preventiva para os equipamentos de sua frota.
-                                </p>
-
-                                <a href="#" class="card-btn" aria-label="Ver mais">
-                                    <ion-icon name="arrow-forward"></ion-icon>
-                                </a>
-
-                            
-
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="feature-card" style="--card-number: '03'">
-
-                            <div class="card-icon">
-                                <img src="./assets/images/feature-icon-3.png" width="93" height="93" alt="">
-                            </div>
-
-                                <h3 class="h3 card-title">Garantia de Qualidade</h3>
-
-                                <p class="card-text">
-                                    Garanta a qualidade de serviço da sua empresa, 
-                                    através dos Serviços de Manutenção Operacional e Preventiva
-                                    nas nossas Plataformas Hidráulicas
-                                </p>
-
-                                <a href="#" class="card-btn" aria-label="Ver mais">
-                                    <ion-icon name="arrow-forward" ></ion-icon>
-                                </a>
-
-                            
-
-                            </div>
-                        </li>
-
-                    </ul>
-
-                </div>
-            </section>
-
-   
-        </article>
-      </main>
-
-
-
-
-       <!--
-        - #FOOTER (PEZINHO)
-        --> 
-        <footer class="footer">
-            <div class="container">
-        
-              <div class="footer-top section">
-        
-                <div class="footer-brand">
-        
-                  <a href="#" class="logo">Hidraucam</a>
-        
-                  <p class="footer-text">
-                    Empresa especializada em plataforma hidráulica 
-                    e equipamentos hidráulicos
-                  </p>
-        
-                  <ul class="social-list">
-        
-                    <li>
-                      <a href="#" class="social-link">
-                        <ion-icon name="logo-whatsapp"></ion-icon>
-                      </a>
-                    </li>
-        
-                    <li>
-                      <a href="#" class="social-link">
-                        <ion-icon name="logo-facebook"></ion-icon>
-                      </a>
-                    </li>
-        
-                    <li>
-                      <a href="#" class="social-link">
-                        <ion-icon name="logo-instagram"></ion-icon>
-                      </a>
-                    </li>
-        
-                    <li>
-                      <a href="#" class="social-link">
-                        <ion-icon name="logo-linkedin"></ion-icon>
-                      </a>
-                    </li>
-        
-                  </ul>
-        
-                </div>
-        
-                <ul class="footer-list">
-        
-                  <li>
-                    <p class="footer-list-title">Acesso rápido</p>
-                  </li>
-        
-                  <li>
-                    <a href="#" class="footer-link">Início</a>
-                  </li>
-        
-                  <li>
-                    <a href="#" class="footer-link">Sobre nós</a>
-                  </li>
-        
-                  <li>
-                    <a href="#" class="footer-link">Produtos</a>
-                  </li>
-        
-                  <li>
-                    <a href="#" class="footer-link">Serviços</a>
-                  </li>
-        
-                  <li>
-                    <a href="#" class="footer-link">Fale conosco</a>
-                  </li>
-        
-                </ul>
-        
-                <ul class="footer-list">
-        
-                  <li>
-                    <p class="footer-list-title">Serviços</p>
-                  </li>
-        
-                  <li>
-                    <a href="#" class="footer-link">Plataformas</a>
-                  </li>
-        
-                  <li>
-                    <a href="#" class="footer-link">Manutenção</a>
-                  </li>
-        
-                  <li>
-                    <a href="#" class="footer-link">Garantia</a>
-                  </li>
-        
-                  <li>
-                    <a href="#" class="footer-link">Historico</a>
-                  </li>
-        
-                </ul>
-        
-                <ul class="footer-list">
-        
-                  <li>
-                    <p class="footer-list-title">Informações</p>
-                  </li>
-        
-                  <li>
-                    <a href="#" class="footer-link">Telefone</a>
-                  </li>
-        
-                  <li>
-                    <a href="#" class="footer-link">E-Mail</a>
-                  </li>
-        
-                  <li>
-                    <a href="#" class="footer-link">Localização</a>
-                  </li>
-        
-                  <li>
-                    <a href="#" class="footer-link">Outros Produtos</a>
-                  </li>
-
-                  <li>
-                    <a href="#" class="footer-link">Termos & Condição</a>
-                  </li>
-        
-                </ul>
-        
-              </div>
-        
-              <div class="footer-bottom">
-                <p class="copyright">
-                  &copy; 2024 Hidraucam. Todos os direitos reservados por <a href="#" class="copyright-link">Hidraucam</a>
-                </p>
-              </div>
-        
+              <p class="section-text">
+                Para garantir a qualidade, a segurança e a continuidade
+                dos seus serviços a HIDRAUCAM tem um Plano de Manutenção
+                Preventiva adequado às suas necessidades.
+              </p>
             </div>
-          </footer>
+
+
+            <a href="services.html" class="btn">Ver mais</a>
+
+
+          </div>
+
+          <ul class="feature-list grid-list">
+
+            <li>
+              <div class="feature-card" style="--card-number: '01'">
+
+                <div class="card-icon">
+                  <img src="./assets/images/feature-icon-2.png" width="94" height="94" alt="">
+                </div>
+                <h3 class="h3 card-title">Manutenção Operacional</h3>
+
+                <p class="card-text">
+                  A HIDRAUCAM realiza todos os serviços
+                  de manutenção de
+                  equipamento hidráulico de qualquer marca,
+                  modelo e tamanho
+                </p>
+
+                <a href="services.html" class="card-btn" aria-label="Ver mais">
+                  <ion-icon name="arrow-forward"></ion-icon>
+                </a>
 
 
 
-            <!-- 
+              </div>
+            </li>
+
+            <li>
+              <div class="feature-card" style="--card-number: '02'">
+
+                <div class="card-icon">
+                  <img src="./assets/images/feature-icon-1.png" width="71" height="91" alt="">
+                </div>
+                <h3 class="h3 card-title">Manutenção preventiva</h3>
+
+                <p class="card-text">
+                  A HIDRAUCAM recomenda e executa excelentes serviços
+                  de Manutenção Preventiva para os equipamentos de sua frota.
+                </p>
+
+                <a href="services.html" class="card-btn" aria-label="Ver mais">
+                  <ion-icon name="arrow-forward"></ion-icon>
+                </a>
+
+
+
+              </div>
+            </li>
+
+            <li>
+              <div class="feature-card" style="--card-number: '03'">
+
+                <div class="card-icon">
+                  <img src="./assets/images/feature-icon-3.png" width="93" height="93" alt="">
+                </div>
+
+                <h3 class="h3 card-title">Garantia de Qualidade</h3>
+
+                <p class="card-text">
+                  Garanta a qualidade de serviço da sua empresa,
+                  através dos Serviços de Manutenção Operacional e Preventiva
+                  nas nossas Plataformas Hidráulicas
+                </p>
+
+                <a href="services.html" class="card-btn" aria-label="Ver mais">
+                  <ion-icon name="arrow-forward"></ion-icon>
+                </a>
+
+
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+    </article>
+  </main>
+
+
+            <!--
+                - #GALERIA
+            -->
+
+
+            <section class="section blog" aria-label="blog" id="blog">
+              <div class="container">
+      
+                <p class="section-subtitle">Galeria</p>
+      
+                <h2 class="h2 section-title">Atividades recentes & nossas fotos!</h2>
+      
+                <p class="section-text">
+                  Veja um pouco sobre nossas atividades recentes nas redes sociais, nossas fotos e trabalhos realizados com as melhores plataformas hidraulicas do Brasil!
+                </p>
+      
+                <ul class="blog-list grid-list">
+      
+                  <li>
+                    <div class="blog-card">
+      
+                      <figure class="card-banner img-holder" style="--width: 770; --height: 500;">
+                        <img src="./assets/images/blog-1.jpg" width="770" height="500" loading="lazy"
+                          alt=""
+                          class="img-cover">
+                      </figure>
+      
+                      <div class="card-content">
+      
+                        <time class="card-meta" datetime="2022-08-02">
+                          <span class="span">11</span> Ago
+                        </time>
+      
+                        <h3 class="h3 card-title">
+                          <a href="#">
+                            Plataforma elevatória de carga com capacidade 2200kg instalada com sucesso em mais um caminhão!🚛
+                          </a>
+                        </h3>
+      
+                        <p class="card-text">
+                          Mais uma de nossas plataformas instaladas com sucesso, venha conferir mais noticias no nosso Instragam e Facebook, ou até mesmo
+                          solicite sua cotação!
+                          (11)2032-5484
+                          (11) 94029-4817
+                        </p>
+      
+                        <a href="#" class="btn-link">
+                          <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+      
+                          <span class="span blog-custom">Ver mais </span>
+                        </a>
+      
+                      </div>
+      
+                    </div>
+                  </li>
+      
+                  <li>
+                    <div class="blog-card">
+      
+                      <figure class="card-banner img-holder" style="--width: 770; --height: 500;">
+                        <img src="./assets/images/blog-2.jpg" width="770" height="500" loading="lazy"
+                          alt="."
+                          class="img-cover">
+                      </figure>
+      
+                      <div class="card-content">
+      
+                        <time class="card-meta" datetime="2022-08-21">
+                          <span class="span">23</span> Fev
+                        </time>
+      
+                        <h3 class="h3 card-title">
+                          <a href="#">
+                            Plataforma HDR300 instalada em veículo utilizado para transporte de cilindros.
+                          </a>
+                        </h3>
+      
+                        <p class="card-text">
+                          Mais uma plataforma HDR300 Instalada pela nossa empresa, testada e utilizada em mais um caminhão! Nossa equipe de colaboradores está sempre pronta para atender você.
+                        </p>
+      
+                        <a href="#" class="btn-link">
+                          <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+      
+                          <span class="span blog-custom">Ver mais</span>
+                        </a>
+      
+                      </div>
+      
+                    </div>
+                  </li>
+      
+                </ul>
+      
+              </div>
+            </section>
+      
+
+
+
+            
+
+
+
+            <!--
+                - #SOBRE NOS (THIGS)
+            -->
+
+  <section class="contact-section" id="contact">
+    <div class="contact-bg">
+      <p class="section-subtitle">Entre em contato</p>
+      <h2 class="h2 section-title">Fale conosco!</h2>
+      <div class="line">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <p class="text">A equipe da Hidraucam está disponível para atender você de diversas formas:
+        ligue para os números 11 2297-7844 ou 11 2032-5484, envie um e-mail para falecom@hidraucam.com.br
+        ou preencha o formulário abaixo. Também é possível agendar uma visita em nossas instalações!</p>
+    </div>
+
+
+    <div class="contact-body">
+      <div class="contact-info">
+        <div>
+          <span><i class="fas fa-mobile-alt"></i></span>
+          <span>Número Celular.</span>
+          <span class="text">+55 11 94029-4817</span>
+        </div>
+
+        <div>
+          <span><i class="fas fa-envelope-open"></i></span>
+          <span>Contato disponível para e-mail</span>
+          <span class="text">falecom@hidraucam.com.br </span>
+        </div>
+
+        <div>
+          <span><i class="fas fa-map-marker-alt"></i></span>
+          <span>Endereço</span>
+          <span class="text">Avenida Santos Dumont, 2400 - Cumbica - Guarulhos
+            CEP: 07220-000</span>
+        </div>
+
+        <div>
+          <span><i class="fas fa-clock"></i></span>
+          <span>Horário de funcionamento</span>
+          <span class="text">Segunda - Sexta (08:00 até 17:30)</span>
+        </div>
+      </div>
+
+
+      <div class="contact-form">
+        <form>
+          <div>
+            <input type="text" class="form-control" placeholder="Nome">
+            <input type="text" class="form-control" placeholder="E-mail">
+          </div>
+          <div>
+            <input type="email" class="form-control" placeholder="Telefone">
+            <input type="text" class="form-control" placeholder="Cidade/UF">
+          </div>
+          <textarea rows="5" placeholder="Nos conte um pouco sobre seu interesse:" class="form-control"></textarea>
+          <input type="submit" class="send-btn" value="Enviar">
+        </form>
+
+        <div>
+          <img src="assets/images/eba.png" alt="">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.
+                8219178521676!2d-46.46823137546017!3d-23.
+                466887285645626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+                1!3m3!1m2!1s0x94ce61685e285f6b%3A0xe4b47fd709bc4c48!2sHidraucam%20Plataformas!5e0!3m2!1spt-PT!2sbr!4v1710079421493!5m2!1spt-PT!2sbr"
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+
+  <!--
+        - #FOOTER (PEZINHO)
+        -->
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top section">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">Hidraucam</a>
+
+          <p class="footer-text">
+            Empresa especializada em plataforma hidráulica
+            e equipamentos hidráulicos
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-whatsapp"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Acesso rápido</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Início</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Sobre nós</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Produtos</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Serviços</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Fale conosco</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Serviços</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Plataformas</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Manutenção</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Garantia</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Historico</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Informações</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Telefone</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">E-Mail</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Localização</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Outros Produtos</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Termos & Condição</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; 2024 Hidraucam. Todos os direitos reservados por <a href="#" class="copyright-link">Hidraucam</a>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+
+
+  <!-- 
                - #BOTAO PRA VOLTAR PRA CIMA
             -->
 
-            <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
-                <ion-icon name="chevron-up"></ion-icon>
-            </a>
+  <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
+    <ion-icon name="chevron-up"></ion-icon>
+  </a>
 
 
 
 
-<!--
+  <!--
     - Javascript link
 -->
-<script src="./assets/js/script.js" defer></script>
+  <script src="./assets/js/script.js" defer></script>
 
-<!--
+  <!--
     - ionicon link
 -->
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-</body>    
+</body>
 
 </html>
